@@ -6,7 +6,7 @@ const gpio = require('rpi-gpio');
 let pin = 7;
 
 // The delay between each time it lights up (in millisseconds)
-let blinkDelay = 2000;
+let blinkDelay = 1000;
 
 // Here we're setting up a channel to write to pin 7
 // gpio.DIR_OUT is a constant that indicates we want to write content
