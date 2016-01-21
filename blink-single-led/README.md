@@ -40,7 +40,7 @@ $ sudo node code.js
 
 If you've done everything right your led may start blinking right now.
 
-[**If you need an explanation on what the code does, it's file has lots of useful and detailed comments, take a look at it. I'm sure you will understand everything you need to.**](./code.js)
+[**If you need an explanation on what the code does, its own file has lots of useful and detailed comments, take a look at it. I'm sure you will understand everything you need to.**](./code.js)
 
 **WARNING:** Make sure to check your LED specs before trying this. The operation Voltage and Current of it may be different from mine. These values are also called `Forward Voltage` and `Forward Current`, respectively.
 
