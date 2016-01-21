@@ -33,6 +33,7 @@ function blink() {
 		currentStatus = !currentStatus;
 
 		// A little feedback message so we can be aware of what is happening
+		// If you find this annoying feel free to comment the line below
 		console.log(`LED is now: ${currentStatus ? 'On' : 'Off'}`);
 	}, blinkDelay);
 }
