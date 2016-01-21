@@ -41,13 +41,19 @@ Take a look at [this image if](../rp2-pins.png?raw=true) you need help locating 
 
 ## Simulation
 
+This is an accurate image illustrating the circuit using a real Raspberry Pi 2 Model B.
+
+![Fritzing Simulation](./fritzing-simulation.png?raw=true)
+
+## Draft
+
 Please consider the power supply as a RaspberryPi.
 * `+` is the 5v pin (1st pin)
 * `-` is the GND pin (6th pin)
 
 Take a look at [this image if](../rp2-pins.png?raw=true) you need help locating those pins.
 
-![Simulation](./simulation.png?raw=true)
+![Draft](./simulation.png?raw=true)
 
 ## Cool Picture
 
