@@ -21,13 +21,7 @@ function blink() {
 
 	setInterval(() => {
 		// Here we write the opposing value of the current status
-		gpio.write(pin, !currentStatus, (err) => {
-
-			// If there was an error we log it to the console
-			if (err) {
-				console.log('An error happened when writing to pin.', err);
-			}
-		});
+		gpio.write(pin, !currentStatus);
 
 		// Now we update the current status
 		currentStatus = !currentStatus;
