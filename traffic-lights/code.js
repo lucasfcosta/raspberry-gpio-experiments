@@ -35,6 +35,8 @@ function start() {
 			currentPosition = 0;
 		}
 
+		console.log(`Current Pin: ${pinOrder[currentPosition]}`);
+
 	}, blinkDelay);
 }
 
