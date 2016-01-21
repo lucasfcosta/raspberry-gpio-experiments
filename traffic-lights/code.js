@@ -31,7 +31,7 @@ function start() {
 
 		currentPosition++;
 
-		if (currentPosition === pinOrder.length) {
+		if (currentPosition === pinOrder.length - 1) {
 			currentPosition = 0;
 		}
 
