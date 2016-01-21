@@ -1,10 +1,12 @@
+'use strict';
+
 const gpio = require('rpi-gpio');
 
 // The pin we want to manipulate
 let pin = 7;
 
 // The delay between each time it lights up (in millisseconds)
-let blinkDelay = 500;
+let blinkDelay = 2000;
 
 // Here we're setting up a channel to write to pin 7
 // gpio.DIR_OUT is a constant that indicates we want to write content
@@ -23,5 +25,8 @@ function blink() {
 
 		// Now we update the current status
 		currentStatus = !currentStatus;
+
+		// A little feedback message so we can be aware of what is happening
+		console.log(`LED is now: ${currentStatus ? 'On' : 'Off'}`);
 	}, blinkDelay);
 }
