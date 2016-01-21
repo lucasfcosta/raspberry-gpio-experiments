@@ -1,4 +1,4 @@
-# Single Led
+# Single LED
 
 This experiment will show you how to light a LED for the very first time in your life.
 
@@ -9,7 +9,7 @@ This experiment will show you how to light a LED for the very first time in your
 - 1 Resistor 150Ω (anything above this will work, but 150Ω is ideal)
 - 2 Male/Female Jumpers
 
-## What is Happening
+## Instructions
 
 We already know our LED needs about 2V and 20mA to operate, so, first of all, we will calculate how much resistence we need in order to make our LED very bright without burning it.
 
@@ -27,6 +27,8 @@ So, to measure how much resistance we need in order to supply 2v and 20mA to our
 
 If you don't have a 150Ω resistor available, anything higher will work, but your led may not be as bright as it would be with a 150Ω resistor.
 
+Now we will connect our power supply into the positive rail and on the 1st pin (5v). Then we will be using our 150Ω resistor to get the current to the rail where our LED is (make sure the LED's longer leg is turned to the positive side and the smaller leg to the negative side, otherwise it won't work). Finally all we've gotta do is take the remaining current to the ground (GND) pin on the RaspberryPi, so connect a jumper on the same rail as your LED and then on Pi's 6th pin.
+
 **WARNING:** Make sure to check your LED specs before trying this. The operation Voltage and Current of it may be different from mine. These values are also called `Forward Voltage` and `Forward Current`, respectively.
 
 ## Circuit Diagram
@@ -35,7 +37,7 @@ Please consider the power supply as a RaspberryPi.
 * `+` is the 5v pin (1st pin)
 * `-` is the GND pin (6th pin)
 
-Take a look at [this image if](../rp2-pins.png?raw=true) you need help locating those pins.
+Take a look at [this image](../rp2-pins.png?raw=true) if you need help locating those pins.
 
 ![Circuit Diagram](./diagram.png?raw=true)
 
