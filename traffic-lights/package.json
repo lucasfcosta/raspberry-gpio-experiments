@@ -1,0 +1,21 @@
+{
+  "name": "traffic-lights",
+  "version": "1.0.0",
+  "description": "Traffic lights project using RaspberryPi's GPIO.",
+  "main": "code.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "traffic",
+    "lights",
+    "raspberry",
+    "pi",
+    "gpio"
+  ],
+  "author": "Lucas Fernandes da Costa",
+  "license": "MIT",
+  "dependencies": {
+    "rpi-gpio": "^0.7.0"
+  }
+}
