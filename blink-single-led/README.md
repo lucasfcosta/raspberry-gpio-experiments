@@ -10,7 +10,7 @@ This experiment will show you how to make a LED blink. Consider this as the hard
 - 2 Male/Female Jumpers
 - 1 Male/Male Jumper (for organization purposes) - This is not mandatory
 
-## What is Happening
+## Instructions
 
 As we did on [the last experiment](../single-led/README.md), we will calculate how much resistance we need for our LED. For this experiment we're going to use the same led we did [last time](../single-led/README.md), therefore we know we've gotta use a 150Ω resistor.
 
