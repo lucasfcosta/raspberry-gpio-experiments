@@ -43,3 +43,5 @@ function lightPosition(pos) {
 		gpio.write(pinOrder[i], i === pos ? true : false);
 	}
 }
+
+gpioSetup();
