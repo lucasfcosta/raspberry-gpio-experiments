@@ -21,7 +21,7 @@ function blink() {
 
 	setInterval(() => {
 		// Here we write the opposing value of the current status
-		gpi.write(pin, !currentStatus)
+		gpio.write(pin, !currentStatus)
 
 		// Now we update the current status
 		currentStatus = !currentStatus;
