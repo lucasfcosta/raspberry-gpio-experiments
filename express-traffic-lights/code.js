@@ -93,6 +93,8 @@ function changeColor(color) {
         // Otherwise we turn it off
         gpio.write(trafficLights[i].pinNumber, color === trafficLights[i].color ? true : false);
     }
+
+    io.emit('colorChanged', color);
 }
 
 // This is the main loop for automatic mode
