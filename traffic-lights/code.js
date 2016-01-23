@@ -57,6 +57,9 @@ function mainLoop() {
         // This logs the number of the pin we've just turned on to the console (feel free to comment the next line)
         console.log(`Current Pin: ${lightOrder[currentPosition].pinNumber}`);
 
+        // Now we schedule the next light to be lit just after the current light's delay (in ms)
+        setTimeout(lightNext, lightOrder[currentPosition].delay);
+
         // Now we add one to the current position, going to the next position (obviously)
         currentPosition++;
 
@@ -65,8 +68,6 @@ function mainLoop() {
             currentPosition = 0;
         }
 
-        // Now we schedule the next light to be lit just after the current light's delay (in ms)
-        setTimeout(lightNext, lightOrder[currentPosition].delay);
     }
 
     // We need to call our lightNext function for the first time when starting the mainLoop
