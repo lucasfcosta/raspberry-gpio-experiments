@@ -91,7 +91,7 @@ function changeColor(color) {
     for (let i = 0; i < trafficLights.length; i++) {
         // If the current color is the one we want to light, we turn it on
         // Otherwise we turn it off
-        gpio.write(trafficLights[i].pinNumber, color === trafficLights.color ? true : false);
+        gpio.write(trafficLights[i].pinNumber, color === trafficLights[i].color ? true : false);
     }
 }
 
