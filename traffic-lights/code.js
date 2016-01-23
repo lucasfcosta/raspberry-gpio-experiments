@@ -13,12 +13,19 @@ let pinOrder = [greenPin, yellowPin, redPin];
 // The delay between lighting each one of the LEDS (in millisseconds)
 let blinkDelay = 1000;
 
-function gpioSetup() {
-
-	// Here we're setting up each one of the pins
-	gpio.setup(greenPin, gpio.DIR_OUT, () => {
-		gpio.setup(yellowPin, gpio.DIR_OUT, () => {
-			gpio.setup(redPin, gpio.DIR_OUT, start);
+// This sets up the provided pin number
+function setupPin(pin) {
+	// Here we return a promise
+	// This promise gets resolved when everything is done without errors
+	return new Promise((resolve, reject) => {
+		gpio.setup(pin, gpio.DIR_OUT, (err) => {
+			if (err !== undefined) {
+				// If there were no errors we resolve it
+				resolve();
+			} else {
+				// Otherwise we reject it
+				reject(err);
+			}
 		});
 	});
 }
@@ -34,7 +41,7 @@ function lightPosition(pos) {
 }
 
 // This is the main loop
-function start() {
+function mainLoop() {
 	
 	// This is like a cursor, it holds the position on the pinOrder array we're currently at
 	let currentPosition = 0;
@@ -57,4 +64,17 @@ function start() {
 	}, blinkDelay);
 }
 
-gpioSetup();
+// Here we create a promise for each one of the pins and add it to our promise array
+let pinPromises = [];
+for (let i = 0; i < pinOrder.length; i++) {
+	pinPromises.push(setupPin(pinOrder[i]));
+}
+
+// After every promise gets resolved we call the function that runs our main loop
+Promise.all(pinPromises).then(() => {
+	mainLoop();
+}).catch((err) => {
+	// If one of the promises got rejected we go here
+	// This means there was an error, so we log it to the console
+	console.log(err);
+});
