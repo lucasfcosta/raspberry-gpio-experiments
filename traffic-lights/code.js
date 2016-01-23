@@ -19,7 +19,7 @@ function setupPin(pin) {
 	// This promise gets resolved when everything is done without errors
 	return new Promise((resolve, reject) => {
 		gpio.setup(pin, gpio.DIR_OUT, (err) => {
-			if (err !== undefined) {
+			if (err === undefined) {
 				// If there were no errors we resolve it
 				resolve();
 			} else {
