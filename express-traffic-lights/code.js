@@ -9,9 +9,9 @@ const server = require('http').Server(app);
 const io = require('socket.io')(server);
 
 // Setting up pins
-let greenLight = new TrafficLight('green', 3, 3000);
+let greenLight = new TrafficLight('green', 7, 3000);
 let yellowLight = new TrafficLight('yellow', 5, 1000);
-let redLight = new TrafficLight('red', 7, 3000);
+let redLight = new TrafficLight('red', 3, 3000);
 let trafficLights = [greenLight, yellowLight, redLight];
 
 app.set('port', process.env.PORT || 3000);

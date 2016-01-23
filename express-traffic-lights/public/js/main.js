@@ -13,6 +13,7 @@ $('.btn-red').click(function() {
 });
 
 socket.on('colorChanged', function(currColor) {
-    $("#current-stats").removeClass();
-    $('#current-stats').addClass('jumbotron', 'bg-' + currColor);
+    $('current-status').removeClass();
+    $('#current-status').addClass('jumbotron');
+    $('#current-status').addclass('bg-' + currColor);
 });
