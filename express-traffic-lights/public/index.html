@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Traffic Lights Controller</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="jumbotron header">
+            <h1>Traffic Lights Controller</h1>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-4">
+                <div class="traffic-light btn-green"></div>
+            </div>
+            <div class="col-xs-4">
+                <div class="traffic-light btn-yellow"></div>
+            </div>
+            <div class="col-xs-4">
+                <div class="traffic-light btn-red"></div>
+            </div>
+        </div>
+
+        <div id="current-status" class="jumbotron bg-green">
+            <h1>Current Status</h1>
+        </div>
+
+    </div>
+
+    <script src="js/vendor/jquery-1.11.2.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/socket.io.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

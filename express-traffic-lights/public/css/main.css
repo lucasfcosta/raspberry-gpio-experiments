@@ -1,0 +1,83 @@
+.jumbotron {
+    margin-top: 3em;
+}
+
+.header {
+    text-align: center;
+    background-image: url("../images/citybg.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #FFFFFF;
+}
+
+.header h1 {
+    text-shadow: 0 0 5px #000000;
+}
+
+.traffic-light {
+    margin: auto;
+}
+
+#current-status {
+    text-align: center;
+}
+
+.bg-green {
+    background-color: #00A807;
+    color: #FFFFFF;
+}
+
+.bg-red {
+    background-color: #C70000;
+    color: #FFFFFF;
+}
+
+.bg-yellow {
+    color: #000000;
+    background-color: #EFF000;
+}
+
+.btn-red {
+  background: #E53030;
+  border: 3px solid #fff;
+  border-radius: 100%;
+  box-shadow: 0 -2px 0 3px #c91919 inset, 0 5px 5px rgba(65, 8, 8, 0.17), 0 15px rgba(255, 255, 255, 0.25) inset;
+  cursor: pointer;
+  display: block;
+  height: 5vw;
+  width: 5vw;
+}
+.btn-red:hover {
+  background: #C82626;
+  box-shadow: 0 -2px 0 3px #1a1a1a inset, 0 5px 5px rgba(0, 0, 0, 0.17), 0 15px rgba(255, 255, 255, 0.32) inset;
+}
+
+.btn-green {
+  background: #0EC518;
+  border: 3px solid #fff;
+  border-radius: 100%;
+  box-shadow: 0 -2px 0 3px #0b9512 inset, 0 5px 5px rgba(0, 7, 1, 0.17), 0 15px rgba(255, 255, 255, 0.25) inset;
+  cursor: pointer;
+  display: block;
+  height: 5vw;
+  width: 5vw;
+}
+.btn-green:hover {
+  background: #14AB1D;
+  box-shadow: 0 -2px 0 3px #1a1a1a inset, 0 5px 5px rgba(0, 0, 0, 0.17), 0 15px rgba(255, 255, 255, 0.32) inset;
+}
+
+.btn-yellow {
+  background: #FFC334;
+  border: 3px solid #fff;
+  border-radius: 100%;
+  box-shadow: 0 -2px 0 3px #ffb401 inset, 0 5px 5px rgba(103, 73, 0, 0.17), 0 15px rgba(255, 255, 255, 0.25) inset;
+  cursor: pointer;
+  display: block;
+  height: 5vw;
+  width: 5vw;
+}
+.btn-yellow:hover {
+  background: #E5AB20;
+  box-shadow: 0 -2px 0 3px #1a1a1a inset, 0 5px 5px rgba(0, 0, 0, 0.17), 0 15px rgba(255, 255, 255, 0.32) inset;
+}
