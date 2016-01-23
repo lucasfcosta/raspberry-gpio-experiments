@@ -5,8 +5,8 @@ This experiment will show you how to light a LED for the very first time in your
 ## Needed Materials
 
 - 1 Breadboard
-- 1 Led (5mm) - Mine operates at 1,9V-2,1V and 20mA
-- 1 Resistor 150Ω (anything above this will work, but 150Ω is ideal)
+- 1 LED (5mm) - Mine operates at 1,9V-2,1V and 20mA
+- 1 150Ω Resistor (anything slightly above this will work, but 150Ω is ideal)
 - 2 Male/Female Jumpers
 
 ## Instructions

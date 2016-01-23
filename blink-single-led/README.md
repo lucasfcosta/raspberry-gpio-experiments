@@ -5,8 +5,8 @@ This experiment will show you how to make a LED blink. Consider this as the hard
 ## Needed Materials
 
 - 1 Breadboard
-- 1 Led (5mm) - Mine operates at 1,9V-2,1V and 20mA
-- 1 Resistor 150Ω (anything above this will work, but 150Ω is ideal)
+- 1 LED (5mm) - Mine operates at 1,9V-2,1V and 20mA
+- 1 150Ω Resistor (anything slightly above this will work, but 150Ω is ideal)
 - 2 Male/Female Jumpers
 - 1 Male/Male Jumper (for organization purposes) - This is not mandatory
 
@@ -18,7 +18,7 @@ As we did on [the last experiment](../single-led/README.md), we will calculate h
 
 If you don't have a 150Ω resistor available, anything higher will work, but your led may not be as bright as it would be with a 150Ω resistor.
 
-This time, **instead of supplying power through pin 1, we will use pin 7**. We will do this because it's a "programmable pin", thus we will be able to turn it on and off. Then, before supplying power to the LED we need to use our 150Ω resistor and ake sure the LED's longer leg is on the plus side. After this all we've gotta do is take the current back to RaspberryPi's GND pin (pin number 6).
+This time, **instead of supplying power through pin 1, we will use pin 7**. We will do this because it's a "programmable pin", thus we will be able to turn it on and off. Then, before supplying power to the LED we need to use our 150Ω resistor and make sure the LED's longer leg is on the plus side. After this all we've gotta do is take the current back to RaspberryPi's GND pin (pin number 6).
 
 ### Code
 

@@ -16,18 +16,18 @@ gpio.setup(pin, gpio.DIR_OUT, blink);
 // This is the function that turns the voltage on pin 7 on and off
 // It uses the value specified on `blinkDelay` as delay
 function blink() {
-	// This indicates if the pin is on or off
-	let currentStatus = false;
+    // This indicates if the pin is on or off
+    let currentStatus = false;
 
-	setInterval(() => {
-		// Here we write the opposing value of the current status
-		gpio.write(pin, !currentStatus);
+    setInterval(() => {
+        // Here we write the opposing value of the current status
+        gpio.write(pin, !currentStatus);
 
-		// Now we update the current status
-		currentStatus = !currentStatus;
+        // Now we update the current status
+        currentStatus = !currentStatus;
 
-		// A little feedback message so we can be aware of what is happening
-		// If you find this annoying feel free to comment the line below
-		console.log(`LED is now: ${currentStatus ? 'On' : 'Off'}`);
-	}, blinkDelay);
+        // A little feedback message so we can be aware of what is happening
+        // If you find this annoying feel free to comment the line below
+        console.log(`LED is now: ${currentStatus ? 'On' : 'Off'}`);
+    }, blinkDelay);
 }
