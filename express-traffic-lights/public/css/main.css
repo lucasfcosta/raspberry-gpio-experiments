@@ -44,8 +44,8 @@
   box-shadow: 0 -2px 0 3px #c91919 inset, 0 5px 5px rgba(65, 8, 8, 0.17), 0 15px rgba(255, 255, 255, 0.25) inset;
   cursor: pointer;
   display: block;
-  height: 5vw;
-  width: 5vw;
+  height: 10vw;
+  width: 10vw;
 }
 .btn-red:hover {
   background: #C82626;
@@ -59,8 +59,8 @@
   box-shadow: 0 -2px 0 3px #0b9512 inset, 0 5px 5px rgba(0, 7, 1, 0.17), 0 15px rgba(255, 255, 255, 0.25) inset;
   cursor: pointer;
   display: block;
-  height: 5vw;
-  width: 5vw;
+  height: 10vw;
+  width: 10vw;
 }
 .btn-green:hover {
   background: #14AB1D;
@@ -74,10 +74,17 @@
   box-shadow: 0 -2px 0 3px #ffb401 inset, 0 5px 5px rgba(103, 73, 0, 0.17), 0 15px rgba(255, 255, 255, 0.25) inset;
   cursor: pointer;
   display: block;
-  height: 5vw;
-  width: 5vw;
+  height: 10vw;
+  width: 10vw;
 }
 .btn-yellow:hover {
   background: #E5AB20;
   box-shadow: 0 -2px 0 3px #1a1a1a inset, 0 5px 5px rgba(0, 0, 0, 0.17), 0 15px rgba(255, 255, 255, 0.32) inset;
+}
+
+@media screen and (max-width: 900px) {
+    .traffic-light {
+        height: 22vw;
+        width: 22vw;
+    }
 }
